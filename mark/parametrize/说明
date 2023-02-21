@@ -1,0 +1,14 @@
+parametrize(self,argnames, argvalues, indirect=False, ids=None, scope=None)
+
+argnames：参数名。
+
+argvalues：参数对应值，类型必须为list。如果只有一个参数，里面则是值的列表：
+
+如：@pytest.mark.parametrize("username", ["yy", "yy2", "yy3"])。如果有多个参数，则需要用元组来存放值，
+一个元组对应一组参数的值，如：@pytest.mark.parametrize("name,pwd", [("yy1", "123"), ("yy2", "123"), ("yy3", "123")])。
+
+
+indirect：如果设置成True，则把传进来的参数当函数执行，而不是一个参数。
+
+
+ids：用例的ID，传一个字符串列表，用来标识每一个测试用例，自定义测试数据结果，增加可读性。

@@ -1,0 +1,1 @@
+@pytest.mark.flaky(reruns=重试次数, reruns_delay=次数之间的延时设置（单位：秒）)
